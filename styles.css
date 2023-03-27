@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+#tablero {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  background-color: #333;
+  padding: 10px;
+}
+
+.casilla {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em;
+  color: white;
+  cursor: pointer;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+}
+
+.casilla:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.jugador-x {
+  background-image: url("https://img.icons8.com/color/96/000000/x.png");
+}
+
+.jugador-o {
+  background-image: url("https://img.icons8.com/color/96/000000/o.png");
+}
+
+.ganadora {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#jugadorActual {
+  margin-top: 20px;
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333;
+}
+
+#reiniciar {
+  margin-top: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#reiniciar:hover {
+  background-color: #444;
+}
+
+.mensaje {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  font-weight: bold;
+  color: #333;
+}
