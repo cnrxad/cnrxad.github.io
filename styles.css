@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 body {
@@ -30,8 +31,8 @@ body {
   cursor: pointer;
   background-size: 100%;
   background-repeat: no-repeat;
-  height: 100px;
-  width: 100px;
+  height: 12vh;
+  width: 12vh;
 }
 
 .casilla:hover {
@@ -39,11 +40,11 @@ body {
 }
 
 .jugador-x {
-  background-image: url("https://img.icons8.com/color/96/000000/x.png");
+  background-image: url("");
 }
 
 .jugador-o {
-  background-image: url("https://img.icons8.com/color/96/000000/o.png");
+  background-image: url("");
 }
 
 .ganadora {
@@ -87,4 +88,8 @@ body {
   font-size: 3em;
   font-weight: bold;
   color: #333;
+}
+
+.title {
+  padding-bottom: 2rem;
 }

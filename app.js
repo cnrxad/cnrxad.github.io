@@ -45,7 +45,7 @@ function verificarGanador() {
       casillaB.classList.add("ganadora");
       casillaC.classList.add("ganadora");
       juegoTerminado = true;
-      mostrarMensaje(`el jugador ${jugadorActual.toUpperCase()} gana`);
+      mostrarMensaje(`ganó: ${jugadorActual.toUpperCase()}`);
       return;
     }
   }
