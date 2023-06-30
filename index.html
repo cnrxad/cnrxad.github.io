@@ -1,26 +1,73 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>tres en raya</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cnrxad</title>
   </head>
+
   <body>
-    <h1 class="title">tres en raya</h1>
-    <div id="tablero">
-      <div class="casilla" id="casilla-0"></div>
-      <div class="casilla" id="casilla-1"></div>
-      <div class="casilla" id="casilla-2"></div>
-      <div class="casilla" id="casilla-3"></div>
-      <div class="casilla" id="casilla-4"></div>
-      <div class="casilla" id="casilla-5"></div>
-      <div class="casilla" id="casilla-6"></div>
-      <div class="casilla" id="casilla-7"></div>
-      <div class="casilla" id="casilla-8"></div>
-    </div>
-    <div id="jugadorActual">turno: x</div>
-    <button id="reiniciar">Reiniciar</button>
-    <div class="mensaje" id="mensaje"></div>
-    <script src="app.js"></script>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#" id="logo">cnrxad</a></li>
+          <li><a href="">work</a></li>
+          <li><a href="">about</a></li>
+          <li>
+            <a href="https://github.com/cnrxad" target="_blank" id="github"
+              >github</a
+            >
+          </li>
+          <li>
+            <a href="https://acannonbladde@gmail.com" target="_blank">mail</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main></main>
   </body>
 </html>
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url(wallpaperflare.com_wallpaper.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  header {
+    margin-top: 5vh;
+  }
+  ul li {
+    list-style: none;
+    display: inline;
+    margin-right: 5vh;
+  }
+  ul li a {
+    color: #fff;
+    user-select: none;
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+  }
+  #logo {
+    background-color: #fff;
+    color: #191d36;
+    padding: 0.4%;
+    font-family: "Caprasimo", cursive;
+    text-transform: lowercase;
+  }
+  #logo:hover {
+    transition: 0.3s ease-in-out;
+    background-color: unset;
+    color: #fff;
+  }
+  #github {
+    margin-left: 140vh;
+  }
+</style>
